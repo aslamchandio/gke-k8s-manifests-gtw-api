@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  #Dictionary
+  name: myapp1-deployment
+spec:
+  # Dictionary
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp1
+  template:
+    metadata:
+      # Dictionary
+      name: myapp1-pod
+      labels:
+        # Dictionary
+        app: myapp1 # Key value pairs
+    spec:
+      containers:
+      # List
+      - name: myapp1-container
+        image: aslam24/nginx-web-oxer:v1
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "50Mi" # 128 MebiByte is equal to 135 Megabyte (MB)
+            cpu: "50m" # `m` means milliCPU
+          limits:
+            memory: "75Mi"
+            cpu: "75m" # 1000m is equal to 1 VCPU core                                               

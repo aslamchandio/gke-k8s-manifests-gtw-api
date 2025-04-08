@@ -12,7 +12,9 @@ spec:
   - type: NamedAddress
     value: my-global-pip
 
-#gcloud compute addresses create my-global-pip --global
+# gcloud compute addresses create my-global-pip --global
 
-#gcloud compute addresses list
-#gcloud compute addresses describe my-global-pip --global
+# gcloud compute addresses list
+# gcloud compute addresses describe my-global-pip --global
+
+# gcloud compute addresses delete my-global-pip --global
