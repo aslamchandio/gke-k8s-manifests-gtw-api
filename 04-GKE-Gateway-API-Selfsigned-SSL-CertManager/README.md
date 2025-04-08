@@ -1,6 +1,6 @@
 ---
 title: GKE with Kubernetes Gateway API - Load Balancer with self-signed SSL
-description: Create GCP Application Load Balancer using GKE Kubernetes Gateway API, SSL with Kubernetes Secrets
+description: Create GCP Application Load Balancer using GKE Kubernetes Gateway API, Self-signed SSL with Certificate manager
 ---
 
 ### Step-01-01: Create Regional Static IP
